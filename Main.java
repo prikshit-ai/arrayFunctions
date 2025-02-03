@@ -1,3 +1,7 @@
+// Prikshit gaur
+// 23070126094
+// AIML B-1
+
 import java.util.*;
 public class Main {
     public static void main(String[] args) {
