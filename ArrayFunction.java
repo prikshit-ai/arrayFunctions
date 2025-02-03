@@ -4,7 +4,13 @@ public class ArrayFunction {
 
     
     public void display(ArrayList<Integer> array) {
-        System.out.println("Array is: " + array);
+        System.out.println("ArrayList is: " + array);
+    }
+    public void displayArr(int[]array){
+        System.out.print("Array is:");
+        for (int i = 0; i < array.length; i++) {
+            System.out.println(array[i]);
+        }
     }
 
     
@@ -42,5 +48,23 @@ public class ArrayFunction {
         System.out.println("Smallest difference is: " + smallest);
         System.out.println("Index is :" + index);
         return index;
+    }
+    public ArrayList<Integer> convertArrayToList(int[] array) {
+        ArrayList<Integer> arrayList = new ArrayList<>();
+        for (int num : array) {
+            arrayList.add(num);
+        }
+        display(arrayList);
+        return arrayList;
+    }
+
+    // Method to convert an ArrayList back to an array
+    public int[] convertListToArray(ArrayList<Integer> list) {
+        int[] array = new int[list.size()];
+        for (int i = 0; i < list.size(); i++) {
+            array[i] = list.get(i);
+        }
+        displayArr(array);
+        return array;
     }
 }

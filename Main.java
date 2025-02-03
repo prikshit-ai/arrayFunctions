@@ -1,13 +1,19 @@
+import java.util.*;
 public class Main {
     public static void main(String[] args) {
         UserInput array = new UserInput();
-       /*  ArrayFunctions choice = new ArrayFunctions();
-        choice.oddEven(array.arrInput());
-*/
         ArrayFunction choice = new ArrayFunction();
-        choice.consecDiff(array.arrInput());
-        
-    }
 
-    
+        // Take input once and reuse it
+        System.out.println("Enter array;");
+        int[] inputArray = array.arrInput();
+        System.out.println("enter arraylist");
+        ArrayList<Integer> inputList = array.arrayListInput();
+
+        // Perform operations
+        choice.consecDiff(inputArray);
+        choice.oddEven(inputArray);
+        choice.convertArrayToList(inputArray);
+        choice.convertListToArray(inputList);
+    }
 }
