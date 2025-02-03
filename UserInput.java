@@ -1,5 +1,6 @@
 import java.util.*;
 public class UserInput {
+     // Method to take Array as input
     public int[] arrInput(){
         Scanner cf = new Scanner(System.in);
         int[] array = new int[5];
@@ -8,7 +9,7 @@ public class UserInput {
             array[i] = cf.nextInt();
             
         }
-        return array ;
+        return array ;// Return the Array
 
 
     }
